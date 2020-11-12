@@ -6,19 +6,23 @@ body {
 }
 
 .header {
-    padding: 70px;
-    padding-top: 40px;
+    padding: 6%;
+    padding-top: 2%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 15px;
 }
 
-.header > a > img {
-    width: 200px;
+.header > a {
+    width: 20%;
 }
 
-.navbar{
+.header > a > img {
+    width: 100%;
+}
+
+.navbar {
     width: 100%;
 }
 
@@ -47,10 +51,70 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.actions > button {
+
+button {
     background-color: rgb(2, 83, 83);
     color: whitesmoke;
     border-radius: 5px;
     border: none;
     padding: 10px 15px;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0 5%;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    margin: 5% 30%;
+}
+
+.banner > img {
+    width: 100%;
+}
+
+.publish > h3, p {
+    text-align: center;
+    line-height: 1.5;
+}
+
+p {
+    margin: 0 25% 1%;
+}
+
+.formulario {
+    margin: 2% 25%;
+    text-align: center;
+}
+
+.formulario > div > * {
+    margin: 2% 10px;
+}
+/* RESPONSIVE WEB DESIGN */
+@media (max-width: 1169px){
+    .header > a {
+        width: 150px;
+    }
+    .menu, .actions {
+        display: none;
+    }
+
+    .banner {
+        margin: 5% 20%;
+    }
+
+    p {
+        margin: 0 15% 5%;
+    }
+}
+
+@media all and (max-width: 1169px) and (max-width: 600px) {
+    .banner {
+        margin: 10% 1%;
+    }
+    p {
+        margin: 0 10% 5%;
+    }
 }
