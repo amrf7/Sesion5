@@ -92,6 +92,19 @@ p {
 .formulario > div > * {
     margin: 2% 10px;
 }
+
+.explanatory-video {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+.explanatory-video > video {
+    width: 60%;
+}
+
 /* RESPONSIVE WEB DESIGN */
 @media (max-width: 1169px){
     .header > a {
@@ -108,13 +121,30 @@ p {
     p {
         margin: 0 15% 5%;
     }
+
+    .explanatory-video {
+        margin: 5% 10%;
+    }
+
+    .explanatory-video > video {
+        width: 90%;
+    }
 }
 
 @media all and (max-width: 1169px) and (max-width: 600px) {
     .banner {
         margin: 10% 1%;
     }
+
     p {
         margin: 0 10% 5%;
+    }
+
+    .explanatory-video {
+        margin: 5% 5%;
+    }
+
+    .explanatory-video > video {
+        width: 100%;
     }
 }
