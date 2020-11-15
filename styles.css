@@ -5,13 +5,22 @@ body {
     color: rgb(2, 83, 83);
 }
 
+p {
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+    line-height: 1.5;
+}
+
 .header {
-    padding: 5% 6% 5px;
+    padding: 3% 3% 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 15px;
-    background-color: tomato;
 }
 
 .header > a {
@@ -36,72 +45,138 @@ body {
     list-style-type: none;
 }
 
+.menu > li > a {
+    list-style-type: none;
+    font-size: 25px;
+}
+
 a {
     text-decoration: none;
     color: rgb(2, 83, 83);
-}
+    font-size: 30px;
+}    
 
 a:hover {
     text-decoration: underline;
 }
 
 .actions {
-    width: 300px;
+    width: 500px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.actions > a {
+    font-size: 25px;
+}
+
 button {
+    font-size: 25px;
     background-color: rgb(2, 83, 83);
     color: whitesmoke;
     border-radius: 5px;
     border: none;
-    padding: 10px 15px;
+    padding: 15px 20px;
 }
 
 button:hover {
-    background-color: rgb(59, 179, 59);
+    background-color: rgb(119, 172, 13);
+}
+
+.intro {
+    padding: 5% 10% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
+    margin: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 50px;
-    margin: 0 5%;
+    font-size: 100px;
+}
+
+.intro-text {
+    width: 50%;
+    margin-right: 5%;
+}
+
+.intro-text > p {
+    text-align: start;
+}
+
+.free-trial > div {
+    display: flex;
+    height: 50px;
+    margin: 3% 0;
+    align-items: center;
+}
+
+.free-trial > div > button {
+    background-color: rgb(119, 172, 13);
+}
+
+.free-trial > div > * {
+    margin-right: 10%;
+    width: 100%;
+    font-size: 20px;
+}
+
+.free-trial > p {
+    text-align: start;
+    margin: 0;
+    font-size: 20px;
+    color: grey;
+}
+
+.intro > img {
+    height: 100%;
 }
 
 .banner {
     display: flex;
     justify-content: center;
-    margin: 5% 30%;
+    margin: 3% 30%;
 }
 
 .banner > img {
     width: 100%;
 }
 
-.publish > h3, p {
+.publish {
+    padding: 0 30%;
+}
+
+.publish > h3{
     text-align: center;
-    line-height: 1.5;
 }
 
 .publish > p {
-    margin: 0 25% 1%;
+    text-align: justify;
 }
 
 .formulario {
-    margin: 2% 25%;
-    text-align: center;
+    padding: 0 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.formulario > div > * {
-    margin: 2% 10px;
+.formulario > input {
+    font-size: 30px;
+    height: 100%;
+    width: 50%;
+}
+
+.formulario > button {
+    background-color: rgb(119, 172, 13);
 }
 
 .explanatory-video {
     display: flex;
     flex-direction: column;
-    margin: 5% 10%;
+    margin: 5% 20%;
     align-items: center;
     justify-content: center;
 }
@@ -163,40 +238,164 @@ h1 {
 }
 
 /* RESPONSIVE WEB DESIGN */
-@media (max-width: 768px){
-    .header > a {
-        width: 150px;
+@media (max-width: 1910px){
+    h1 {
+        font-size: 70px;
     }
 
-    .intro {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .intro-text > * {
-        margin: 5% 5%;
+    p {
+        line-height: 1.5;
+        font-size: 30px;
     }
 
-    .intro-text > .free-trial > * {
-        display: flex;
-        justify-content: space-around;
-        margin: 5% 0;
+    h3 {
+        font-size: 30px;
     }
 
-    .intro > img {
-        width: 90%;
+    .header {
+        padding: 5% 5% 0;
     }
 
-    .menu, .actions {
-        display: none;
+    .intro-text {
+        width: 50%;
+        margin-right: 5%;
     }
 
     .banner {
         margin: 5% 20%;
     }
 
+    .publish {
+        padding: 0 25%;
+    }
+
+    .formulario {
+        padding: 0;
+    }
+
+    .header > .burger > div {
+        background-color:  rgb(8, 66, 66);
+        height: 5px;
+        width: 50px;
+        margin: 10px 0;
+    }
+    .menu, .actions {
+        display: none;
+    }
+
+    .explanatory-video {
+        margin: 5%;
+    }
+}
+@media all and (max-width: 1910px) and (max-width: 1350px) {
+    .header > a {
+        width: 250px;
+    }
+
+    .intro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-text {
+        margin: 0;
+        width: 100%;
+    }
+
+    .intro-text > h1 {
+        font-size: 80px;
+        text-align: center;
+    }
+
+    .intro-text > .free-trial > div {
+        height: 10em;
+        margin: 2%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+        align-content: center;
+    }
+
+    .intro-text > .free-trial > div > button {
+        margin: 0;
+        background-color:  rgb(119, 172, 13);
+    }
+    .intro-text > .free-trial > div > img {
+        height: 20%;
+        margin: 0;
+    }
+
+    .free-trial > p {
+        text-align: center;
+    }
+
+    .intro > img {
+        width: 100%;
+        margin: 5%;
+    }
+    
+    .publish {
+        padding: 0 20%;
+    }
+
+
+}
+
+@media all and (max-width: 1910px) and (max-width: 1350px) and (max-width: 768px) {
     p {
-        margin: 0 15% 5%;
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    .header > .burger > div {
+        background-color:  rgb(8, 66, 66);
+        height: 3px;
+        width: 30px;
+        margin: 5px 0;
+    }
+
+    .intro-text > h1 {
+        font-size: 60px;
+    }
+
+    .intro-text {
+        margin: 0;
+    }
+
+    .intro-text > p {
+        margin: 5% 10%;
+    }
+
+    .intro-text > .free-trial > * {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .intro-text > .free-trial > div {
+        display: flex;
+        justify-content: space-around;
+        margin: 10px 20%;
+    }
+
+    .banner {
+        margin: 5% 20%;
+    }
+
+    .publish {
+        padding: 5%;
+    }
+
+    .publish > p {
+        margin: 0 10% 2%;
+    }
+
+    .formulario > input {
+        width: 40%;
+        font-size: 25px;
     }
 
     .explanatory-video {
@@ -208,9 +407,20 @@ h1 {
     }
 }
 
-@media all and (max-width: 768px) and (max-width: 376px) {
+@media all and (max-width: 1910px) and (max-width: 1350px) and (max-width: 768px) and (max-width: 376px) {
+    p {
+        font-size: 18px;
+        text-align: justify;
+        margin: 0;
+        padding: 0;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
     .banner {
-        margin: 10% 1%;
+        margin: 5%;
     }
 
     .intro {
@@ -218,29 +428,49 @@ h1 {
         flex-direction: column;
         align-items: center;
     }
-    .intro-text > * {
-        margin: 5% 5%;
+    
+    .intro-text > p {
+        margin: 5% 0;
+        text-align: justify;
+    }
+
+    .intro-text > h1 {
+        font-size: 35px;
     }
 
     .intro-text > .free-trial > * {
-        display: flex;
-        justify-content: space-around;
-        margin: 5% 0;
+        font-size: 15px;
+    }
+
+.free-trial > div > button {
+        padding: 10px;
+        font-size: 15px;
     }
 
     .intro > img {
         width: 90%;
     }
 
-    p {
-        margin: 0 10% 5%;
+    .publish {
+        padding: 0;
     }
 
-    .explanatory-video {
-        margin: 5% 5%;
+    .publish > h3 {
+        padding: 5%;
+    }
+
+    .formulario {
+        flex-direction: column;
+    }
+
+    .formulario > input, button {
+        margin: 5px;
+        font-size: 18px;
+        padding: 10px;
     }
 
     .explanatory-video > video {
         width: 100%;
+        margin: 5% 0 0;
     }
 }
