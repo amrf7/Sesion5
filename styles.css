@@ -5,6 +5,10 @@ body {
     color: rgb(2, 83, 83);
 }
 
+p {
+    font-size: 30px;
+}
+
 .header {
     padding: 6%;
     padding-top: 2%;
@@ -110,50 +114,6 @@ h1 {
     width: 60%;
 }
 
-/* RESPONSIVE WEB DESIGN */
-@media (max-width: 1169px){
-    .header > a {
-        width: 150px;
-    }
-    .menu, .actions {
-        display: none;
-    }
-
-    .banner {
-        margin: 5% 20%;
-    }
-
-    p {
-        margin: 0 15% 5%;
-    }
-
-    .explanatory-video {
-        margin: 5% 10%;
-    }
-
-    .explanatory-video > video {
-        width: 90%;
-    }
-}
-
-@media all and (max-width: 1169px) and (max-width: 600px) {
-    .banner {
-        margin: 10% 1%;
-    }
-
-    p {
-        margin: 0 10% 5%;
-    }
-
-    .explanatory-video {
-        margin: 5% 5%;
-    }
-
-    .explanatory-video > video {
-        width: 100%;
-    }
-}
-
 .features {
     margin: 0;
     background-color: rgb(8, 66, 66);
@@ -182,25 +142,82 @@ h1 {
 
 .feature-content > h3 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .feature-content > p, a {
-    font-size: 18px;
+    font-size: 30px;
+    text-align: justify;
     line-height: 1.5;
 }
 
 .feature-content > img {
     width: 80px;
-    margin: 0 0 10%;
     align-self: center;
 }
 
 .feature-content > a {
     color: rgb(119, 172, 13);
 }
+
 .feature-image {
     padding: 0;
     width: 50%;
     position: relative;
 }
+
+/* RESPONSIVE WEB DESIGN */
+@media (max-width: 1910px){
+    .header > a {
+        width: 150px;
+    }
+    .menu, .actions {
+        display: none;
+    }
+
+    .banner {
+        margin: 5% 20%;
+    }
+
+    .explanatory-video {
+        margin: 5% 10%;
+    }
+
+    .explanatory-video > video {
+        width: 90%;
+    }
+
+    .feature-card {
+        overflow: visible;
+        padding: 10%;
+    }
+
+    .feature-content {
+        margin: 0;
+    }
+
+    .feature-image {
+        display: none;
+    }
+}
+
+@media all and (max-width: 1910px) and (max-width: 1350px) {
+    .banner {
+        margin: 10% 1%;
+    }
+
+    .explanatory-video {
+        margin: 5% 5%;
+    }
+
+    .explanatory-video > video {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 1910px) and (max-width: 1350px) and (max-width: 768px){
+    .features {
+        display: flex;
+        flex-direction: column;
+    }
+} 
