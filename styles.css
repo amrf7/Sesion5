@@ -190,7 +190,7 @@ h1 {
     background-color: rgb(8, 66, 66);
     display: grid;
     grid-template: repeat( 2, 1fr) / repeat( 2, 1fr);
-    padding: 50px;
+    padding: 10%;
 }
 
 .feature-card {
@@ -212,19 +212,24 @@ h1 {
 }
 
 .feature-content > h3 {
+    margin: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .feature-content > p, a {
-    font-size: 18px;
+    font-size: 30px;
+    text-align: justify;
     line-height: 1.5;
 }
 
 .feature-content > img {
     width: 80px;
-    margin: 0 0 10%;
     align-self: center;
+}
+
+.feature-content > * {
+    margin: 5%;
 }
 
 .feature-content > a {
@@ -261,6 +266,14 @@ h1 {
         margin-right: 5%;
     }
 
+    .header > a {
+        width: 150px;
+    }
+
+    .menu, .actions {
+        display: none;
+    }
+
     .banner {
         margin: 5% 20%;
     }
@@ -286,7 +299,25 @@ h1 {
     .explanatory-video {
         margin: 5%;
     }
+
+    .feature-card {
+        overflow: visible;
+        padding: 10%;
+    }
+
+    .feature-content {
+        margin: 0;
+    }
+
+    .feature-content > h3 {
+        text-align: center;
+    }
+
+    .feature-image {
+        display: none;
+    }
 }
+
 @media all and (max-width: 1910px) and (max-width: 1350px) {
     .header > a {
         width: 250px;
@@ -321,6 +352,7 @@ h1 {
         margin: 0;
         background-color:  rgb(119, 172, 13);
     }
+
     .intro-text > .free-trial > div > img {
         height: 20%;
         margin: 0;
@@ -334,12 +366,28 @@ h1 {
         width: 100%;
         margin: 5%;
     }
+
+    .explanatory-video {
+        padding: 5% 5%;
+    }
+
+    .explanatory-video > video {
+        width: 100%;
+    }
     
     .publish {
         padding: 0 20%;
     }
 
-
+    .features {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .feature-card {
+        padding: 5%;
+        margin: 5% 0;
+    }
 }
 
 @media all and (max-width: 1910px) and (max-width: 1350px) and (max-width: 768px) {
@@ -405,6 +453,14 @@ h1 {
     .explanatory-video > video {
         width: 90%;
     }
+
+    .feature-content >  h3 {
+        font-size: 30px;
+    }
+
+    .feature-content > p, a {
+        font-size: 25px;
+    }
 }
 
 @media all and (max-width: 1910px) and (max-width: 1350px) and (max-width: 768px) and (max-width: 376px) {
@@ -442,7 +498,7 @@ h1 {
         font-size: 15px;
     }
 
-.free-trial > div > button {
+    .free-trial > div > button {
         padding: 10px;
         font-size: 15px;
     }
@@ -471,6 +527,25 @@ h1 {
 
     .explanatory-video > video {
         width: 100%;
-        margin: 5% 0 0;
+    }
+
+    .features {
+        padding: 10%;
+    }
+
+    .feature-card {
+        margin: 5% 0;
+    }
+
+    .feature-content > img {
+        width: 60px;
+    }
+
+    .feature-content > p, a {
+        font-size: 18px;
+    }
+
+    .feature-content > h3 {
+        font-size: 25px;
     }
 }
