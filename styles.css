@@ -238,10 +238,57 @@ h1 {
     position: relative;
 }
 
-footer {
-    padding: 10%;
+.get-started {
+    background-color: rgb(8, 66, 66);
+    border-radius: 20px;
+    padding: 50px 15%;
+    margin: 5%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.get-started > * {
+    color: white;
+    margin: 10px 0;
+}
+
+.get-started > div > h3 {
+    font-size: 2.5em;
+    line-height: 1;
+    margin: 0;
+}
+
+.get-started > div > p, a {
+    font-size: 1em;
+}
+
+.get-started > div > .sub {
+    font-size: .75em;
+    color: rgb(194, 194, 194);
+    margin: 0;
+}
+
+.get-started > div > p > a {
+    color:  rgb(119, 172, 13);
+    font-size: 1em;
+}
+
+.get-started > div > p > br {
+    display: none;
+}
+
+.get-started > div > button {
+    background-color:  rgb(119, 172, 13);
+    margin: 10px 0;
+}
+
+footer {
+    padding: 2% 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .subscribe {
@@ -274,6 +321,7 @@ footer {
 }
 
 .links {
+    width: 40%;
     display: flex;
     justify-content: space-between;
 }
@@ -281,8 +329,8 @@ footer {
 .column {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: 100%;
+    margin: 0 5px;
 }
 
 .column > a {
@@ -291,6 +339,46 @@ footer {
     line-height: 2.5;
 }
 
+.social-media {
+    width: 100%;
+    margin: 2% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: end;
+    flex-wrap: wrap;
+}
+
+.social-media > .logos {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.social-media > .logos > .soc-med-logos {
+    display: inherit;
+    align-items: inherit;
+    justify-content: space-between;
+    margin: 0 5%;
+}
+
+.soc-med-logos > a, .logos > a {
+    display: inherit;
+}
+
+.soc-med-logos > a > .capterra {
+    height: 50px;
+    margin-left: 20px;
+}
+
+.soc-med-logos > .logos-img {
+    height: 30px;
+}
+
+.social-media > p {
+    font-size: .9em;
+    color: rgb(49, 49, 49);
+}
 /* RESPONSIVE WEB DESIGN */
 @media (max-width: 1200px){
     h1 {
@@ -369,6 +457,10 @@ footer {
     .feature-image {
         display: none;
     }
+
+    .footer > .links > * {
+        width: 50%;
+    }
 }
 
 @media all and (max-width: 1200px) and (max-width: 900px) {
@@ -439,6 +531,16 @@ footer {
     
     .feature-card {
         margin: 5% 10%;
+    }
+
+    .social-media > .logos {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .social-media > .logos > .soc-med-logos {
+        align-items: center;
+        margin: 0;
     }
 }
 
@@ -600,4 +702,38 @@ footer {
     .feature-content > h3 {
         font-size: 25px;
     }
+
+    .get-started > div > h3 {
+        font-size: 2em;
+        margin: 10px 0;
+    }
+
+    .get-started > div > h3 > br {
+        display: none;
+    }
+
+    .get-started > div > p > br {
+        display: inline;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer > * {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .social-media {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-media > .logos {
+        width: 100%;
+        margin: 5%;
+        align-items: center;
+    }
+
 }
