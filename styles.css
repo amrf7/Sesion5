@@ -238,6 +238,121 @@ h1 {
     position: relative;
 }
 
+.articles {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,400px);
+    padding: 5% 10%;
+    height: 100%;
+}
+
+.articles > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 5%;
+    padding: 10%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gainsboro;
+}
+
+h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.articles p {
+    font-size: 20px;
+}
+
+.articles a {
+    font-size: 20px;
+    color:  rgb(119, 172, 13);
+}
+
+.article1 > h2 {
+    font-size: 4em;
+    margin: 0;
+}
+
+.article1{
+    background-color: rgb(21, 102, 21);
+    color: white;
+    text-align: center;
+}
+
+.article1 p {
+    font-size: 1em;
+    color:  rgb(119, 172, 13);
+}
+
+.article2{
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: white;
+    color: rgb(37, 37, 37);
+    overflow: hidden;
+}
+
+.article2 > .mock-img {
+    display: flex;
+    position: relative;
+    width: 35%;
+    height: 100%;
+}
+
+.article2 > div > * {
+    margin: 5px 0;
+}
+
+.article2 h2 {
+    color: teal;
+    font-size: 2em;
+}
+
+.article3 {
+    background-color: rgb(247, 247, 158);
+    color: rgb(8, 66, 66);
+}
+
+.article3 p {
+    margin: 10px 10%;
+    text-align: center;
+}
+
+.article4 {
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    background-color: rgb(8, 66, 66);
+    color: white;
+    overflow: hidden;
+    padding:0 0 0 10%;
+}
+
+.article4 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#morning{
+    margin-top: 50px;
+    height: 100%;
+}
+
+#blog{
+    width: 80%;
+}
+
+#logo{
+    width: 50px;
+    height: 50px;
+    justify-content: start;
+}
+
 .get-started {
     background-color: rgb(8, 66, 66);
     border-radius: 20px;
@@ -458,6 +573,14 @@ footer {
         display: none;
     }
 
+    .article1 > h2 {
+        font-size: 3em;
+    }
+
+    .articles .mock-img {
+        display: none;
+    }
+
     .footer > .links > * {
         width: 50%;
     }
@@ -541,6 +664,18 @@ footer {
     .social-media > .logos > .soc-med-logos {
         align-items: center;
         margin: 0;
+    }
+
+    .articles {
+        padding: 0px;
+    }
+
+    .article1 > h2 {
+        font-size: 2.5em;
+    }
+
+    .article3 p {
+        font-size: 1em;
     }
 }
 
@@ -736,4 +871,13 @@ footer {
         align-items: center;
     }
 
+    .articles {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .articles > * {
+        height: 100%;
+        padding: 5%;
+    }
 }
